@@ -30,5 +30,14 @@ model animais {
   status String
   createdAt DateTime @default(now())
   updateAt DateTime @updatedAt
+}
 
+model chamados {
+  id Int @id @default(autoincrement())
+  id_solicitacao String
+  tipo_solicitacao String 
+  descricao_solicitacao String
+  image_solicitacao String
+  createdAt DateTime @default(now())
+  updateAt DateTime @updatedAt
 }
